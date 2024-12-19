@@ -1,0 +1,36 @@
+Retriveal Augmentation Generation----
+is an architecture used to help LLM model gpt4, gemini, Gemma to
+provide a better response by using relevant inforgramtion from additonals source
+
+RAG architecture---
+ 1- ingestion - means input of data
+ 2- Retriveal obtainig the knowledge from data 
+ 3- Generation
+
+RAG pipleine 
+ingestion consist - we have documents,convert into chunks,
+        convert into embedding, doing indexing and saving into database
+
+Retriveal - make a query, fetch the result from database, obtain result 
+synthesis - combine our data, fetching from knowledge base,
+        pass through LLM, along with given prompt to get response
+
+INGESTION PART -
+documents means your data like csv, json etc
+
+chunking ??
+split the data into chunks 
+from chunks we get tokens 
+
+how to figure out chunk size ?
+based on different type of datasets 
+
+embedding
+1- frequency based 
+BOW, IF_IDF
+
+2- nueral nueral
+Word2vec , fast text, bert etc
+
+Vector indexing-
+
